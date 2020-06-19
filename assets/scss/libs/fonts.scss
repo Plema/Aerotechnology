@@ -1,10 +1,23 @@
 @font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('../fonts/Garamond/CormorantGaramond-LightItalic.eot');
-  src: url('../fonts/Garamond/CormorantGaramond-LightItalic.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.woff2') format('woff2'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.woff') format('woff'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.svg#CormorantGaramond-LightItalic') format('svg');
-  font-weight: 300;
-  font-style: italic;
+	font-family: 'Conv_tahoma';
+  src: url('../fonts/tahoma.eot'); 
+  src: local('☺'), 
+  url('../fonts/tahoma.woff') format('woff'), 
+  url('../fonts/tahoma.ttf') format('truetype'), 
+  url('../fonts/tahoma.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Conv_tahomabd';
+	src: url('../fonts/tahomabd.eot');
+  src: local('☺'), 
+  url('../fonts/tahomabd.woff') format('woff'), 
+  url('../fonts/tahomabd.ttf') format('truetype'), 
+  url('../fonts/tahomabd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
