@@ -1,0 +1,291 @@
+.footer{
+    padding: 50px 0 0;
+    .logo{
+        width: 219px;
+        display: block;
+        margin: 0 auto 32px;
+        img{
+            width: 100%;
+        }
+    }
+    .footer-menu{
+        padding-bottom: 48px;
+        ul{
+            li{
+                text-align: center;
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    width: 100%;
+                    color: #41434a;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    padding-bottom: 10px;
+                    display: inline-block;
+                    border-bottom: 1px solid #cdd1dc;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #b10f1f;
+                    }
+                    span{
+                        position: relative;
+                        display: inline-block;
+                        &::after{
+                            content: '';
+                            left: 50%;
+                            width: 0;
+                            height: 2px;
+                            bottom: -12px;
+                            position: absolute;
+                            background-color: #b10f1f;
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                }
+                ul{
+                    margin: 22px 0 10px;
+                    li{
+                        margin-bottom: 12px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        a{
+                            border: none;
+                            color: #41434a;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            padding-bottom: 0;
+                            transition: all 0.5s;
+                            &:hover{
+                                color: #b10f1f;
+                            }
+                        }
+                    }
+                }
+            }
+            .drop{
+                a{
+                    span{
+                        &::after{
+                            width: 79px;
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            span{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    .footer-bottom{
+        padding: 50px 0 47px;
+        background-color: #f4f3f7;
+        .cont{
+            margin-bottom: 25px;
+            padding: 0 22px 22px;
+            border-bottom: 1px solid #cdd1dc;
+            p{
+                color: #41434a;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-left: 38px;
+                position: relative;
+                margin-bottom: 21px;
+                i{
+                    top: 0;
+                    left: 0;
+                    font-size: 18px;
+                    color: #41434a;
+                    position: absolute;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 20px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        color: #41434a;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        position: relative;
+                        padding-left: 37px;
+                        i{
+                            left: 0;
+                            top: 50%;
+                            font-size: 18px;
+                            color: #41434a;
+                            position: absolute;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+            }
+        }
+        .politics{
+            text-align: center;
+            span{
+                display: block;
+                color: #41434a;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 7px;
+            }
+            a{
+                display: block;
+                color: #41434a;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration: underline;
+                transition: all 0.5s;
+                &:hover{
+                    color: #b10f1f;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .footer {
+        .logo {
+            display: none;
+        }
+        .footer-menu {
+            ul {
+                display: flex;
+                li{
+                    width: 20%;
+                    text-align: left;
+                    margin-bottom: 0;
+                    ul{
+                        width: 275px;
+                        display: block;
+                        li{
+                            width: 100%;
+                        }
+                    }
+                }
+                .drop{
+                    a{
+                        span{
+                            &::after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            .container{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            .cont{
+                margin: 0;
+                width: 36%;
+                padding: 0;
+                border: none;
+            }
+            .politics{
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .footer {
+        .footer-bottom {
+            .cont{
+                width: 650px;
+                display: flex;
+                justify-content: flex-end;
+                p{
+                    width: 335px;
+                    line-height: 28px;
+                    margin: 0 40px 0 0;
+                }
+                ul{
+                    li {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    .footer {
+        padding: 107px 0 0;
+        .footer-menu {
+            padding-bottom: 12px;
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    ul{
+                        margin: 18px 0 10px;
+                        li {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 28px 0px 34px;
+            .container {
+                padding: 0 0 0 5px;
+            }
+            .politics {
+                span {
+                    margin-bottom: 10px;
+                }
+            }
+            .cont {
+                p {
+                    width: 335px;
+                    line-height: 27px;
+                    margin: 0 48px 0 0;
+                    padding-left: 34px;
+                    i{
+                        top: -2px;
+                        left: 3px;
+                    }
+                }
+                ul{
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+}
