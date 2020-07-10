@@ -4,4 +4,6 @@ $(document).ready(function(){
 
     $('footer ul li ul').parent().addClass('drop');
 
-})
+
+
+});
