@@ -1,0 +1,127 @@
+@import 'libs/slick';
+
+header{
+    background-color: #f4f3f7;
+    border-bottom: 2px solid #b10f1f;
+    .logo-home{
+        display: none;
+    }
+    .logo-page{
+        display: block;
+    }
+    .open-menu {
+        &::before{
+            background-color: #41434a;
+        }
+        &::after{
+            background-color: #41434a;
+        }
+        span{
+            background-color: #41434a;
+        }
+    }
+    .languages {
+        li {
+            a{
+                color: #41434a;
+                &::before{
+                    color: #41434a;
+                }
+            }
+        }
+    }
+}
+
+.error{
+
+}
+
+footer{
+    border-top: 1px solid #cdd1dc;
+}
+
+@media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .error{
+        padding: 50px 0;
+        position: relative;
+        &::before {
+            content: '';
+            top: 0;
+            right: 0;
+            z-index: 0;
+            width: 330px;
+            height: 520px;
+            position: absolute;
+            background: url('../img/about-bg-before.png') no-repeat 50% 50%;
+            background-size: cover;
+        }
+        &::after {
+            content: '';
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 330px;
+            height: 520px;
+            position: absolute;
+            background: url('../img/about-bg-before.png') no-repeat 50% 50%;
+            background-size: cover;
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    header {
+        nav {
+            ul {
+                li {
+                    &:hover{
+                        &::after {
+                            background: #41434a;
+                        }
+                    }
+                    a {
+                        color: #41434a;
+                    }
+                }
+                .drop {
+                    a{
+                        &::before {
+                            color: #41434a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (min-width: 1400px) {
+
+    .error{
+        &::before {
+            width: 474px;
+            height: 738px;
+        }
+        &::after {
+            width: 474px;
+            height: 738px;
+        }
+    }
+
+    .footer {
+        padding: 80px 0 0;
+    }
+
+}
