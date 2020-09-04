@@ -60,6 +60,15 @@ $(document).ready(function(){
                 "height": 310
              }, 1000 );
         }
+        
+    });
+
+    $('.title-item').on('click', function(){
+        var tabData = $(this).data('tab');
+        $('.' + tabData).addClass('active');
+        $('.item-slider').get(0).slick.setPosition();
+        $('.item-slider').get(1).slick.setPosition();
+        $('.item-slider').get(2).slick.setPosition();
     });
 
 })

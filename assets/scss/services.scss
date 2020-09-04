@@ -52,6 +52,7 @@ header{
             margin-bottom: 0;
         }
         .title-item{
+            cursor: pointer;
             display: flex;
             position: relative;
             margin-bottom: 18px;
@@ -263,6 +264,12 @@ header{
                 }
             }
         }
+        .tab{
+            display: none;
+        }
+        .tab.active{
+            display: block;
+        }
     }
 }
 
@@ -309,6 +316,9 @@ footer{
                     width: 31.33%;
                     margin: 0 1% 10px;
                 }
+            }
+            .tab{
+                display: block;
             }
         }
     }

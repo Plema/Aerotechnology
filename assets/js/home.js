@@ -69,16 +69,18 @@ $(document).ready(function(){
 
     $('.missions-slider').slick({
         dots: true,
-        arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
         responsive: [
             {
               breakpoint: 1280,
               settings: {
-                arrows: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+                prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
               }
             },
             {

@@ -13,7 +13,35 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <div class="mobile-menu">
+    <span class="close"></span>
+    <nav>
+        <ul>
+            <li class="active"><a href="about.html">О компании</a></li>
+            <li>
+                <a href="javascript:void(0)">Продукты</a>
+                <ul>
+                    <li><a href="products.html">Новые</a></li>
+                    <li><a href="products.html">Б/у</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mission.html">Миссии</a>
+                <ul>
+                    <li><a href="mission.html#tab-1">Транспорт</a></li>
+                    <li><a href="mission.html#tab-2">Поисковые работы</a></li>
+                    <li><a href="mission.html#tab-3">Пожаротушение</a></li>
+                    <li><a href="mission.html#tab-4">Медицинская эвакуация</a></li>
+                    <li><a href="mission.html#tab-5">Оффшорные перевозки</a></li>
+                </ul>
+            </li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
     <div class="container">
         <div class="header-content">
             <a class="logo logo-home" href="index.html"><img src="img/logo.png" alt=""></a>
@@ -92,7 +120,7 @@
             
                 <div id="tab-1"> 
                   <h3>Транспорт</h3>  
-                  <div class="text-content">
+                  <div id="learn-more1" class="text-content">
                     <div class="text">
                       <h5>Грузовой вариант вертолета Ми-8/17 является базовым и позволяет:</h5>
                       <ul>
@@ -103,7 +131,7 @@
                       </ul>
                     </div>
                   </div>
-                  <a class="learn-more open" href="javascript:void(0)"><span>Читать далее <i class="icon-arrow"></i></span></a>
+                  <a class="learn-more open" href="#learn-more1"><span>Читать далее <i class="icon-arrow"></i></span></a>
                   <div class="slider-tab">
                     <div class="img">
                       <img src="img/mission-item-img1.jpg" alt="">
@@ -148,7 +176,7 @@
                 </div>
                 <div id="tab-2"> 
                   <h3>Поисково-спасательные работы</h3>  
-                  <div class="text-content">
+                  <div id="learn-more2" class="text-content">
                     <div class="text">
                       <h5>Наши вертолеты могут осуществлять следующие поисково-спасательные работы:</h5>
                       <ul>
@@ -169,7 +197,7 @@
                         специалистами Министерств по чрезвычайным ситуациям в разных странах по всему миру.</p>
                     </div>
                   </div>
-                  <a class="learn-more open" href="javascript:void(0)"><span>Читать далее <i class="icon-arrow"></i></span></a>
+                  <a class="learn-more open" href="#learn-more2"><span>Читать далее <i class="icon-arrow"></i></span></a>
                   <div class="slider-tab slider-tab1">
                       <div class="img">
                         <img src="img/mission-item-img10.jpg" alt="">
@@ -193,7 +221,7 @@
                 </div>
                 <div id="tab-3"> 
                   <h3>Пожаротушение</h3>  
-                  <div class="text-content">
+                  <div id="learn-more3" class="text-content">
                     <div class="text">
                       <h5>Наши вертолеты могут осуществлять следующие противопожарные работы:</h5>
                       <ul>
@@ -211,7 +239,7 @@
                         спецтехнику.</p>
                     </div>
                   </div>
-                  <a class="learn-more open" href="javascript:void(0)"><span>Читать далее <i class="icon-arrow"></i></span></a>
+                  <a class="learn-more open" href="#learn-more3"><span>Читать далее <i class="icon-arrow"></i></span></a>
                   <div class="slider-tab slider-tab2">
                       <div class="img">
                         <img src="img/mission-item-img16.jpg" alt="">
@@ -235,7 +263,7 @@
                 </div>
                 <div id="tab-4">
                   <h3>Медицинская эвакуация</h3>  
-                  <div class="text-content">
+                  <div id="learn-more4" class="text-content">
                     <div class="text">
                       <h5>На борту наших вертолетов медперсонал имеет возможность:</h5>
                       <ul>
@@ -255,7 +283,7 @@
                         больного.</p>
                     </div>
                   </div>
-                  <a class="learn-more open" href="javascript:void(0)"><span>Читать далее <i class="icon-arrow"></i></span></a>
+                  <a class="learn-more open" href="#learn-more4"><span>Читать далее <i class="icon-arrow"></i></span></a>
                   <div class="slider-tab slider-tab3">
                       <div class="img">
                         <img src="img/mission-item-img22.jpg" alt="">
@@ -279,7 +307,7 @@
                 </div>
                 <div id="tab-5"> 
                   <h3>Оффшорные перевозки</h3>  
-                  <div class="text-content">
+                  <div id="learn-more5" class="text-content">
                     <div class="text">
                       <h5>Вертолет для офшорных перевозок позволяет решить задачи по:</h5>
                       <ul>
@@ -296,7 +324,7 @@
                         (плановая смена вахт, работы по эвакуации людей) и для поисково-спасательных работ </p>
                     </div>
                   </div>
-                  <a class="learn-more open" href="javascript:void(0)"><span>Читать далее <i class="icon-arrow"></i></span></a>
+                  <a class="learn-more open" href="#learn-more5"><span>Читать далее <i class="icon-arrow"></i></span></a>
                   <div class="slider-tab slider-tab3">
                       <div class="img">
                         <img src="img/mission-item-img28.jpg" alt="">

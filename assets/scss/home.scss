@@ -1328,6 +1328,16 @@
                 line-height: 30px;
             }
         }
+        .missions-slider {
+            .next {
+                bottom: 3px;
+                right: 32%;
+            }
+            .prev {
+                bottom: 3px;
+                left: 32%;
+            }
+        }
     }
 
     .services {

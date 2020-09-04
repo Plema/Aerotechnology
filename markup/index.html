@@ -13,7 +13,35 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <div class="mobile-menu">
+    <span class="close"></span>
+    <nav>
+        <ul>
+            <li class="active"><a href="about.html">О компании</a></li>
+            <li>
+                <a href="javascript:void(0)">Продукты</a>
+                <ul>
+                    <li><a href="products.html">Новые</a></li>
+                    <li><a href="products.html">Б/у</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mission.html">Миссии</a>
+                <ul>
+                    <li><a href="mission.html#tab-1">Транспорт</a></li>
+                    <li><a href="mission.html#tab-2">Поисковые работы</a></li>
+                    <li><a href="mission.html#tab-3">Пожаротушение</a></li>
+                    <li><a href="mission.html#tab-4">Медицинская эвакуация</a></li>
+                    <li><a href="mission.html#tab-5">Оффшорные перевозки</a></li>
+                </ul>
+            </li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
     <div class="container">
         <div class="header-content">
             <a class="logo logo-home" href="index.html"><img src="img/logo.png" alt=""></a>
@@ -68,12 +96,12 @@
 
     <section class="banner">
       <div>
-        <div class="banner-item" style="background: url('img/banner-img.jpg') no-repeat 50% 50%; background-size: cover;">
+        <div class="banner-item" style="background: url('img/banner-img2.jpg') no-repeat 50% 50%; background-size: cover;">
           <div class="container">
             <div class="text">
               <div class="title">
                 <h2>Helicopter</h2>
-                <h3>Мi-8AMTVIP</h3>
+                <h3>Mi 171</h3>
               </div>
               <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
               <a href="javasceipt:void(0)"><span>Подробнее<i class="icon-arrow-next"></i></span></a>
@@ -82,12 +110,12 @@
         </div>
       </div>
       <div>
-        <div class="banner-item" style="background: url('img/banner-img2.jpg') no-repeat 50% 50%; background-size: cover;">
+        <div class="banner-item" style="background: url('img/banner-img.jpg') no-repeat 50% 50%; background-size: cover;">
           <div class="container">
             <div class="text">
               <div class="title">
                 <h2>Helicopter</h2>
-                <h3>Mi 171</h3>
+                <h3>Мi-8AMTVIP</h3>
               </div>
               <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
               <a href="javasceipt:void(0)"><span>Подробнее<i class="icon-arrow-next"></i></span></a>
@@ -120,7 +148,7 @@
           </div>
           <div class="about-text">
             <div class="text">
-              <div class="text-open">
+              <div id="learn-more" class="text-open">
                 <h5>ООО «Авиатехнология» было основано 11 октября 2015 года.</h5>
                 <p>Наша компания специализируется на поставках гражданских вертолетов типа Ми-8/17 (Ми-8АМТ, Ми-171/Ми-171Е, 
                   Ми-171А2 и других вариантов).</p>
@@ -139,7 +167,7 @@
                 <a class="more-details" href="javascript:void(0)">Подробнее</a>  
               </div>
             </div>
-            <a class="learn-more open" href="javascript:void(0)"><span>Узнать больше <i class="icon-arrow"></i></span></a>
+            <a class="learn-more open" href="#learn-more"><span>Узнать больше <i class="icon-arrow"></i></span></a>
           </div>
         </div>
       </div>
@@ -220,27 +248,27 @@
           </div>
           <div class="missions-slider">
             <div class="missions-item">
-              <a href="javascript:void(0)"></a>
+              <a href="mission.html"></a>
               <div class="img" style="background: url('img/missions-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
               <p>Транспорт</p>
             </div>
             <div class="missions-item">
-              <a href="javascript:void(0)"></a>
+              <a href="mission.html"></a>
               <div class="img" style="background: url('img/missions-img2.jpg') no-repeat 50% 50%; background-size: cover;"></div>
               <p>Поисковоспасательные работы</p>
             </div>
             <div class="missions-item">
-              <a href="javascript:void(0)"></a>
+              <a href="mission.html"></a>
               <div class="img" style="background: url('img/missions-img3.jpg') no-repeat 50% 50%; background-size: cover;"></div>
               <p>Пожаротушение</p>
             </div>
             <div class="missions-item">
-              <a href="javascript:void(0)"></a>
+              <a href="mission.html"></a>
               <div class="img" style="background: url('img/missions-img4.jpg') no-repeat 50% 50%; background-size: cover;"></div>
               <p>Медицинская эвакуация</p>
             </div>
             <div class="missions-item">
-              <a href="javascript:void(0)"></a>
+              <a href="mission.html"></a>
               <div class="img" style="background: url('img/missions-img1.jpg') no-repeat 50% 50%; background-size: cover;"></div>
               <p>Транспорт</p>
             </div>
