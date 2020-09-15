@@ -64,11 +64,18 @@ $(document).ready(function(){
     });
 
     $('.title-item').on('click', function(){
-        var tabData = $(this).data('tab');
-        $('.' + tabData).addClass('active');
-        $('.item-slider').get(0).slick.setPosition();
-        $('.item-slider').get(1).slick.setPosition();
-        $('.item-slider').get(2).slick.setPosition();
+        if (clickCounter() == 0){
+            flag = 1;
+            $('.tab').removeClass('active');
+            var tabData = $(this).data('tab');
+            $('.' + tabData).toggleClass('active');
+            $('.item-slider').get(0).slick.setPosition();
+            $('.item-slider').get(1).slick.setPosition();
+            $('.item-slider').get(2).slick.setPosition();
+        } else {
+            flag = 0;
+            $('.tab').removeClass('active');
+        }
     });
 
 })
