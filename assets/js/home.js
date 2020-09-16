@@ -34,6 +34,9 @@ $(document).ready(function(){
         }
     });
 
+
+
+
     $('.product .img').matchHeight({
         byRow: false
     });
@@ -192,3 +195,5 @@ $(window).resize(function(){
     }
 
 });
+
+
