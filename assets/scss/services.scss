@@ -76,10 +76,8 @@ header{
             }
         }
         .item-content{
-            height: 310px;
-            overflow: hidden;
-            margin-bottom: 15px;
             .text{
+                overflow: hidden;
                 padding: 0 10px 0 1px;
                 h5{
                     font-size: 16px;
@@ -120,12 +118,12 @@ header{
                 }
             }
         }
-        .learn-more{
+        .show-more{
             width: 278px;
             display: table;
             padding: 12px 15px;
             text-align: center;
-            margin: 0 auto 30px;
+            margin: 20px auto 30px;
             border: 2px solid #b10f1f;
             transition: all 0.5s;
             span{
@@ -157,7 +155,7 @@ header{
                 background-color: #b10f1f;
             }
         }
-        .learn-more.active{
+        .show-more.active{
             span{
                 i{
                     transform: translate(0,-50%) rotate(-180deg);

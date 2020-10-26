@@ -32,36 +32,11 @@ $(document).ready(function(){
   
     }
 
-    if($('.item-content').find('.text').height() <= 280){
-        $(this).parents('.services-item').addClass('on');   
-    }
-
     var flag = 0;
 
     function clickCounter() {
         return flag;
     }
-
-    $('.learn-more.open').on('click', function(){
-
-        if (clickCounter() == 0){
-            flag = 1;
-            var textHeight = $(this).prev('.item-content').find('.text').height();
-            console.log(textHeight);
-            $(this).addClass('active');
-            $(this).prev('.item-content').animate({
-               "height": textHeight
-            }, 1000 );
-
-        } else {
-            flag = 0;
-            $(this).removeClass('active');
-            $(this).prev('.item-content').animate({
-                "height": 310
-             }, 1000 );
-        }
-        
-    });
 
     $('.title-item').on('click', function(){
         if (clickCounter() == 0){
@@ -76,7 +51,19 @@ $(document).ready(function(){
             flag = 0;
             $('.tab').removeClass('active');
         }
+        if($(window).width() < 768 ){
+
+            $('.text').readmore({
+                speed: 500,
+                lessLink: '<a class="show-more active" href="#"><span>Свернуть <i class="icon-arrow"></i></span></a>',
+                moreLink: '<a class="show-more" href="#"><span>Узнать больше <i class="icon-arrow"></i></span></a>',
+                collapsedHeight: 310,
+            });
+    
+        }
     });
+
+    
 
 })
 
