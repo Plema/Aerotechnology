@@ -38,19 +38,65 @@ $(document).ready(function(){
         return flag;
     }
 
-    $('.title-item').on('click', function(){
-        if (clickCounter() == 0){
-            flag = 1;
-            $('.tab').removeClass('active');
-            var tabData = $(this).data('tab');
-            $('.' + tabData).toggleClass('active');
-            $('.item-slider').get(0).slick.setPosition();
-            $('.item-slider').get(1).slick.setPosition();
-            $('.item-slider').get(2).slick.setPosition();
+    // $('.title-item').on('click', function(){
+    //     console.log(0)
+    //     if (clickCounter() == 0){
+    //         flag = 1;
+    //         console.log(1);
+
+    //         $('.tab').removeClass('active');
+    //         var tabData = $(this).data('tab');
+    //         $('.' + tabData).toggleClass('active');
+
+    //         $('.item-slider').get(0).slick.setPosition();
+    //         $('.item-slider').get(1).slick.setPosition();
+    //         $('.item-slider').get(2).slick.setPosition();
+    //     } else {
+    //         flag = 0;
+    //         console.log(2);
+    //         $('.tab').removeClass('active');
+    //     }
+    //     if($(window).width() < 768 ){
+
+    //         $('.text').readmore({
+    //             speed: 500,
+    //             lessLink: '<a class="show-more active" href="#"><span>Свернуть <i class="icon-arrow"></i></span></a>',
+    //             moreLink: '<a class="show-more" href="#"><span>Узнать больше <i class="icon-arrow"></i></span></a>',
+    //             collapsedHeight: 310,
+    //         });
+    
+    //     }
+    // });
+
+    $(".title-item").on("click", function() {
+        if ($(this).hasClass("active")) {
+          $(this).parent('.services-item').removeClass("active");
+          $(this).parent('.services-item')
+            .siblings(".content")
+            .slideUp(200);
+          $(".set > a i")
+            .removeClass("fa-minus")
+            .addClass("fa-plus");
         } else {
-            flag = 0;
-            $('.tab').removeClass('active');
+          $(".set > a i")
+            .removeClass("fa-minus")
+            .addClass("fa-plus");
+          $(this).parent('.services-item')
+            .find("i")
+            .removeClass("fa-plus")
+            .addClass("fa-minus");
+          $('.services-item').removeClass("active");
+          $(this).parent('.services-item').addClass("active");
+          $(".content").slideUp(200);
+          $(this)
+            .siblings(".content")
+            .slideDown(200);
         }
+
+        $('.item-slider').get(0).slick.setPosition();
+        $('.item-slider').get(1).slick.setPosition();
+        $('.item-slider').get(2).slick.setPosition();
+
         if($(window).width() < 768 ){
 
             $('.text').readmore({
@@ -61,9 +107,8 @@ $(document).ready(function(){
             });
     
         }
-    });
 
-    
+    });
 
 })
 
