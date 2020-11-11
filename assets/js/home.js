@@ -44,6 +44,37 @@ $(document).ready(function(){
     $('.product-tabs li').on('click', function(){
         $('.product-tabs li').removeClass('active');
         $(this).addClass('active');
+
+        $('.product-slider').slick({
+          dots: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          nextArrow: '<button class="slick-arrow next"><i class="icon-arrow-next"></i></button>',
+          prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow-prev"></i></button>',
+          responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+          ]
+        });
+
+        if($(window).width() >= 1024){
+
+          $('.product-slider').slick('unslick');
+    
+        }
+
     });
 
     $('.product-slider').slick({

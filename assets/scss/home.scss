@@ -387,6 +387,10 @@
     }
     .product-slider{
         padding-bottom: 72px;
+        .slick-track{
+            margin-right: 0;
+            margin-left: 0;
+        }
         .slick-list{
             width: 860px;
             margin: 0 -5px;
