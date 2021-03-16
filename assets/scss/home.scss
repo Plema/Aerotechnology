@@ -300,15 +300,16 @@
                         height: 36px;
                         margin: 3px;
                         color: #b10f1f;
-                        font-size: 16px;
+                        font-size: 15px;
                         display: flex;
                         font-weight: 400;
-                        line-height: 18px;
+                        line-height: 15px;
                         position: relative;
                         align-items: center;
                         justify-content: center;
                         border: 2px solid transparent;
                         transition: all 0.5s;
+                        text-align: center;
                         &:hover{
                             color: #ffffff;
                             background-color: rgba(177, 15, 31, 0.7);
@@ -1623,13 +1624,16 @@
                 margin-bottom: 66px;
             }
             .product-tabs {
-                width: 320px;
+                width: 360px;
                 margin-bottom: 40px;
                 li{
                     a{
-                        width: 142px;
+                        width: 162px;
                         span{
-                            width: 132px;
+                            font-size: 16px;
+                            line-height: 16px;
+                            
+                            width: 152px;
                         }
                     }
                 }
